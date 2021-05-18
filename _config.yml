@@ -13,7 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Site Settings
+locale                   : "id-ID"
 title: Blog Gabut
+title_separator          : "-"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Blog Gabut membahas segala hal yang ada, Seputar Tips Trick, Panduan,apa aja.
@@ -23,9 +27,65 @@ minimal_mistakes_skin: dirt
 search: true
 breadcrumbs: true
 
+words_per_minute         : 200
+comments:
+  provider               : "disqus"
+  disqus:
+    shortname            : adminperkantoran
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : 5 (default)
+    colorscheme          : "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+
 keep_files:
   - .git
   - .svn
+
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+  hide                   : # true, false (default)
 
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
