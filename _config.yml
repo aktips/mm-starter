@@ -15,11 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site Settings
-locale                   : "id-ID"
+locale                   : "en-Us"
 title: Blog Gabut
 title_separator          : "-"
 email:
-description: >- # this means to ignore newlines until "baseurl:"
+description: 
   Blog Gabut membahas segala hal yang ada, Seputar Tips Trick, Panduan,apa aja.
 twitter_username: username
 github_username: username
@@ -27,24 +27,15 @@ minimal_mistakes_skin: dirt
 search: true
 breadcrumbs: true
 
-words_per_minute         : 200
 comments:
   provider               : "disqus"
   disqus:
     shortname            : adminperkantoran
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : 5 (default)
     colorscheme          : "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 
 
 # Reading Files
